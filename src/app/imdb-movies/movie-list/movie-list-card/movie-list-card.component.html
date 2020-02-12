@@ -1,0 +1,43 @@
+<div class="card card-style m-2" *ngIf="moviesData">
+    <div class="card-body">
+        <p class="card-text cardHeader">{{moviesData.movie_title}}</p>
+    </div>
+    <div class="d-flex justify-content-center my-2">
+        <div class="d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-secondary btnstyle" data-toggle="modal"
+                [attr.data-target]="'#imdbMovieModal' + index">
+                View
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modalBoxView" *ngIf="moviesData" id="imdbMovieModal{{ index }}" tabindex="-1" role="dialog"
+    aria-labelledby="imdbMovieModalTitle" aria-hidden="true">
+    <div class="modal-dialog modalStyle" role="document">
+        <div class="modal-content content-style">
+            <div class="modal-header">
+                <p class="modal-title title" id="imdbMovieModalTitle">{{moviesData.movie_title}}</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="card-text mb-0"><b>Director Name</b> : {{moviesData.director_name}}</p>
+                <p class="card-text mb-0"><b>Actor 1</b> : {{moviesData.actor_1_name}}</p>
+                <p class="card-text mb-0"><b>Actor 2</b> : {{moviesData.actor_2_name}}</p>
+                <p class="card-text mb-0"><b>Genres</b> : {{moviesData.genres}}</p>
+                <p class="card-text mb-0"><b>Language</b> : {{moviesData.language}}</p>
+                <p class="card-text mb-0"><b>Country</b> : {{moviesData.country}}</p>
+                <p class="card-text mb-0"><b>Rating</b> : {{moviesData.content_rating}}</p>
+                <p class="card-text mb-0"><b>Budget</b> : {{moviesData.budget}}</p>
+                <p class="card-text mb-0"><b>Year</b> : {{moviesData.title_year}}</p>
+                <p class="card-text mb-0"><b>Plot Keywords</b> : {{moviesData.plot_keywords}}</p>
+                <p class="card-text mb-0"><b>IMDB Link</b> : <a href = "{{moviesData.movie_imdb_link}}">Check the IMDB Link</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btnstyle" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

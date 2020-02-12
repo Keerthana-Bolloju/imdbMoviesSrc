@@ -1,0 +1,10 @@
+body{
+    background: #a49d49 !important; 
+    font-size: 1rem !important;
+    color: #194885 !important;
+    font-style: italic !important;
+}
+
+.ngx-pagination .current {
+    background: #194885 !important;
+}

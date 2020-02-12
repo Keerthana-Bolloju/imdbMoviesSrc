@@ -1,0 +1,43 @@
+.card.card-style{
+    height: 85%;
+    box-shadow: 2px 4px 6px 0 rgba(0,0,0,0.3);
+    transition: all 0.2s ease; 
+    box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.3);
+    border-radius: 0.7rem ;
+    background: #EFEFBB; 
+    background: -webkit-linear-gradient(to top, #D4D3DD, #EFEFBB);  
+    background: linear-gradient(to top, #D4D3DD, #EFEFBB); 
+}
+.card.card-style:hover {
+    cursor: pointer;
+    transform: translatey(-4px);   
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem; 
+  }
+  .card-text.cardHeader{
+      font-weight: bold;
+      text-align: center;
+      font-size: 1rem;
+  }
+  .btn-secondary.btnstyle{
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;           
+    background: #194885; 
+} 
+.modal.fade.show.modalBoxView{
+    display: flex !important;
+}
+.modal-dialog.modalStyle{
+    margin: auto;
+    width: 100%;
+}
+.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.modal-content.content-style{    
+    border-radius: 0.7rem ;
+    background: #D4D3DD; 
+    background: -webkit-linear-gradient(to top, #D4D3DD, #EFEFBB,#D4D3DD);  
+    background: linear-gradient(to top, #D4D3DD, #EFEFBB,#D4D3DD); 
+}
